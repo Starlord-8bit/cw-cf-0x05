@@ -7,6 +7,8 @@
 #include <ImageUtils.h>
 #include "assets.h"
 
+namespace CF05 {
+
 
 class Pacman: public Sprite, public EventTask {
   private:
@@ -71,3 +73,5 @@ class Pacman: public Sprite, public EventTask {
 
     
 };
+
+} // namespace CF05

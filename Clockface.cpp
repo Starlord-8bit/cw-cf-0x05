@@ -1,5 +1,7 @@
 #include "Clockface.h"
 
+namespace CF05 {
+
 const int Clockface::MAP_SIZE; // Definition for static member
 unsigned long lastMillis = 0;
 unsigned long lastMillisTime = 0;
@@ -392,3 +394,5 @@ void Clockface::drawMap()
 
   
 }
+
+} // namespace CF05

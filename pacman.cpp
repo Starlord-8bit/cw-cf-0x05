@@ -1,5 +1,7 @@
 #include "pacman.h"
 
+namespace CF05 {
+
 Pacman::Pacman(int x, int y) {
   _x = x;
   _y = y;
@@ -143,3 +145,4 @@ int Pacman::getY() {
 const char* Pacman::name() {
   return "PACMAN";
 }
+} // namespace CF05

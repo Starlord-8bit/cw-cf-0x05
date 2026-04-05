@@ -18,6 +18,8 @@
 //sprites
 #include "pacman.h"
 
+namespace CF05 {
+
 
 // Simple coordinate struct for BFS
 struct Point {
@@ -122,3 +124,5 @@ class Clockface: public IClockface {
     void setup(CWDateTime *dateTime);
     void update();
 };
+
+} // namespace CF05
