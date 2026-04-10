@@ -18,6 +18,8 @@
 //sprites
 #include "pacman.h"
 
+#define CLOCKFACE_NAME "cw-cf-0x05"
+
 namespace CF05 {
 
 
@@ -77,7 +79,7 @@ class Clockface: public IClockface {
       {4,1,1,1,1,1,1,1,1,1,1,4}
     };
 
-    
+
     byte _MAP[12][12] = {
       {4,1,1,1,1,1,7,1,1,1,1,4},
       {1,2,2,1,2,2,2,2,1,2,2,1},
@@ -117,8 +119,8 @@ class Clockface: public IClockface {
     void updateClock();
     const char* weekDayName(int weekday);
     const char* monthName(int month);
-    
-    
+
+
   public:
     Clockface(Adafruit_GFX* display);
     void setup(CWDateTime *dateTime);
