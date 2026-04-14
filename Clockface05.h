@@ -4,7 +4,7 @@
 
 
 #include "hour_font.h"
-#include "../cw-commons/picopixel.h"
+#include "display/picopixel.h"
 
 #include <Adafruit_GFX.h>
 #include <Tile.h>
@@ -13,7 +13,7 @@
 #include <Object.h>
 #include <ImageUtils.h>
 #include <ColorUtil.h>
-#include "IClockface.h"
+#include "widgets/clockface/IClockface.h"
 
 //sprites
 #include "pacman.h"
@@ -77,7 +77,7 @@ class Clockface: public IClockface {
       {4,1,1,1,1,1,1,1,1,1,1,4}
     };
 
-    
+
     byte _MAP[12][12] = {
       {4,1,1,1,1,1,7,1,1,1,1,4},
       {1,2,2,1,2,2,2,2,1,2,2,1},
@@ -117,8 +117,8 @@ class Clockface: public IClockface {
     void updateClock();
     const char* weekDayName(int weekday);
     const char* monthName(int month);
-    
-    
+
+
   public:
     Clockface(Adafruit_GFX* display);
     void setup(CWDateTime *dateTime);

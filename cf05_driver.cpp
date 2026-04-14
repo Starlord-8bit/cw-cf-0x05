@@ -4,7 +4,7 @@
  */
 
 #include "Clockface05.h"        // v2 class, namespace CF05
-#include <CWClockfaceDriver.h>     // v3 driver API
+#include <widgets/clockface/CWClockfaceDriver.h>     // v3 driver API
 
 static CF05::Clockface* s_face = nullptr;
 
