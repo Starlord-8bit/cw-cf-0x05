@@ -4,7 +4,7 @@
 
 
 #include "hour_font.h"
-#include "../cw-commons/picopixel.h"
+#include "display/picopixel.h"
 
 #include <Adafruit_GFX.h>
 #include <Tile.h>
@@ -13,7 +13,7 @@
 #include <Object.h>
 #include <ImageUtils.h>
 #include <ColorUtil.h>
-#include "IClockface.h"
+#include "widgets/clockface/IClockface.h"
 
 //sprites
 #include "pacman.h"
